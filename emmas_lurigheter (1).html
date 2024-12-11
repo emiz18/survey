@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Form Redirect</title>
+    <script>
+        const myForms = [
+            "https://forms.office.com/Pages/ResponsePage.aspx?id=7Bg_kSZ_X0yoFnhP6aWO3ZT0ufA4RQ1MtGKiwGamy_pUOE41UklOTFYzNVZNMjdETldXQTMxUTVFMS4u",
+            "https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&FormId=7Bg_kSZ_X0yoFnhP6aWO3R95JFWJwwlIqOYmYWwH74xUOTVZUVlCSDBRRjlPS0M3RVBLVjA1VEYzUC4u&Token=010ce6f501684eff88bb503bd267a5a8"
+        ];
+
+        window.onload = function() {
+            const randomIndex = Math.floor(Math.random() * myForms.length);
+            window.location.href = myForms[randomIndex];
+        };
+    </script>
+</head>
+<body>
+</body>
+</html>
